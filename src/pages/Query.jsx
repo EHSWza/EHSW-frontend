@@ -15,6 +15,8 @@ function Query({ onReport, onBack }) {
         setLoading(true);
         setError(null);
         setResult(null);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+
 
         try {
             const response = await fetch(
@@ -28,7 +30,6 @@ function Query({ onReport, onBack }) {
 
             const data = await response.json();
             // console.log(data);
-            await new Promise((resolve) => setTimeout(resolve, 2000));
 
             setResult(data);
         } catch (err) {

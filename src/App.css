@@ -1,9 +1,11 @@
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0a0a0a 0%, #04a100 100%);
+  font-family: 'Roboto', sans-serif;
+  background: #1c1c1c;
   min-height: 100vh;
 }
+
 
 .app {
   text-align: center;
@@ -16,6 +18,7 @@ body {
   }
 }
 
+/* Page container */
 .page {
   max-width: 800px;
   margin: 0 auto 1.5rem auto;
@@ -88,6 +91,7 @@ h2 {
     font-size: 1.5rem;
   }
 }
+
 
 .primary-btn {
   background: linear-gradient(135deg, #00b14f 0%, #00d664 100%);
@@ -209,7 +213,7 @@ input[type="text"] {
 
 @media (max-width: 767px) {
   input[type="text"] {
-    font-size: 16px; /* Prevents zoom on iOS */
+    font-size: 16px;
   }
 }
 
@@ -266,7 +270,6 @@ input[type="text"]:focus {
   transform: translateX(-3px);
 }
 
-/* Loading animation for buttons */
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.7; }
@@ -279,7 +282,6 @@ input[type="text"]:focus {
   animation: pulse 1.5s ease-in-out infinite;
 }
 
-/* Smooth transitions for all interactive elements */
 * {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
